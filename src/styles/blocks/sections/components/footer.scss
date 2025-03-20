@@ -1,0 +1,29 @@
+footer {
+    height: 315rem;
+    padding: 44rem;
+    background: #292929;
+    display: flex;
+    // gap: 100rem;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        cursor: pointer;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 30rem;
+        p {
+            color: #fff;
+            font-size: 16rem;
+        }
+        .gray {
+            color: #525252;
+        }
+        .work {
+            display: flex;
+            flex-direction: column;
+            gap: 16rem;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.our-projects {
+    width: 100%;
+    height: 49rem;
+    background: #FFF1DD;
+    @include df_ac_jcc;
+    h1 {
+        color: #000;
+        font-size: 24rem;
+    }
+}
+
+.projects {
+    width: 100%;
+    height: 487rem;
+    padding: 20rem 187rem;
+    display: flex;
+    gap: 45rem;
+    @include df_ac_jcc;
+    .card {
+        border-radius: 15rem;
+        padding: 15rem;
+        width: 324rem;
+        height: 273rem;
+        box-shadow: 1rem 3rem 5rem 0 rgba(0, 0, 0, 0.25);
+        background: linear-gradient(134deg, #fff 0%, #fff1dd 100%);
+        display: flex;
+        @include df_fdc;
+        gap: 13rem;
+        p {
+            color: #000;
+            font-size: 16rem;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+header {
+    position: absolute;
+    z-index: 50;
+    top: 10rem;
+    left: 15rem;
+    width: calc(100% - 30px);
+    height: 74rem;
+    border-radius: 15rem;
+    background: rgba(0, 0, 0, .3);
+    padding-inline: 25rem;
+    @include df_ac;
+    justify-content: space-between;
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 50rem;
+            li {
+                font-size: 16rem;
+                color: #fff;
+            }
+        }
+    }
+    p {
+        width: 300rem;
+        font-size: 16rem;
+        color: #fff;
+        text-align: end;
+    }
+}

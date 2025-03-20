@@ -1,0 +1,58 @@
+.faces {
+    width: 100%;
+    @include df_ac_jcc;
+    flex-direction: column;
+    gap: 20rem;
+    .title {
+        width: 100%;
+        @include df_ac_jcc;
+        p {
+            color: #000;
+            font-size: 24rem;
+            font-weight: 700;
+        }
+    }
+    .block {
+        display: flex;
+        align-items: center;
+        gap: 70rem;
+        
+        .container-img {
+            position: relative;
+            width: 350rem;
+            height: 400rem;
+            overflow: hidden;
+            border-radius: 10px; // Добавил радиус, если нужно
+    
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+    
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.5); // Затемненный фон
+                color: white;
+                text-align: center;
+                padding: 10rem;
+                font-size: 16rem;
+                font-weight: bold;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+                @include df_fdc;
+                gap: 10rem;
+                p {
+                    text-align: center;
+                }
+            }
+    
+            &:hover .overlay {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.every-child {
+    width: 100%;
+    padding: 10rem 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 38rem;
+    h1 {
+        font-size: 32rem;
+        color: #EEA75D;
+    }
+    .search {
+        display: flex;
+        justify-content: space-between;
+        p {
+            width: 572rem;
+            font-size: 20rem;
+        }
+        label {
+            height: 70rem;
+            width: 700rem;
+            border-radius: 10rem;
+            position: relative;
+            border: 1rem solid #79717A;
+            padding: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+                width: 100%;
+                font-size: 24rem;
+            }
+            img {
+                position: absolute;
+                top: 10rem;
+                right: 15rem;
+                width: 50rem;
+                height: 50rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .cases {
+        @include grid(3, 148rem);
+        .card {
+            position: relative;
+            border-radius: 15rem;
+            width: 360rem;
+            height: 449rem;
+            overflow: hidden;
+            min-width: 300rem;
+            display: flex;
+            flex-direction: column;
+            gap: 15rem;
+            // justify-content: center;
+            // align-items: center;
+            .img {
+                padding: 13rem 15rem;
+                width: 360rem;
+                height: 243rem;
+                min-width: 300rem;
+                // background: #000;
+                background-image: url('../../assets/img/boy.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                .text {
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: end;
+                    p {
+                        color: #fff;
+                        font-size: 20rem;
+                    }
+                }
+            }
+            .chicken {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                img {
+                    width: 30rem;
+                    height: 30rem;
+                }
+                p {
+                    font-size: 16rem;
+                    color: #000;
+                }
+            }
+            .text-pri {
+                color: #000;
+                font-size: 14rem;
+            }
+            .help {
+                margin-inline: auto;
+                width: 228rem;
+                height: 45rem;
+                border-radius: 15rem;
+                background-color: #9747FF;
+                color: #fff;
+                font-size: 16rem;
+                &:hover {
+                    background-color: #b6b3bb;
+                    transition: all .3 ease;
+                }
+            }
+            .about {
+                margin-inline: auto;
+                color: #79717A;
+                text-decoration: underline;
+                font-size: 14rem;
+                font-family: "Inter", sans-serif;
+            }
+        }
+    }
+}
+
+.mr {
+    margin-right: auto;
+}
+
+.mc {
+    margin-inline: auto;
+}
+
+.ml {
+    margin-left: auto;
+}

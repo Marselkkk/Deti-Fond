@@ -1,0 +1,43 @@
+.news {
+    width: 100%;
+    padding: 40rem 100rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .text {
+            color: #000;
+            font-size: 36rem;
+            font-weight: 700;
+        }
+        button {
+            padding: 15rem 25rem;
+            background: #8AC923;
+            border-radius: 15rem;
+            color: #fff;
+            font-size: 24rem;
+        }
+    }
+    .block {
+        @include grid(4, 16rem);
+        .item {
+            width: 270rem;
+            display: flex;
+            flex-direction: column;
+            gap: 20rem;
+            margin-inline: auto;
+            img {
+                width: 270rem;
+                height: 152rem;
+            }
+            p {
+                font-size: 16rem;
+                color: #000;
+                font-family: 'Inter', sans-serif;
+            }
+        }
+    }
+}
